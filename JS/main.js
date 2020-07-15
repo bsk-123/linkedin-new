@@ -22,10 +22,14 @@ document.querySelector(".ham").addEventListener("click",function(){
     document.querySelector("body").style.position="fixed";
 }
 })
-document.querySelector(".card").addEventListener("click",function(){
-    var val = document.querySelector(".ham-menu").style.transform
-    if(val=="translateX(0px)"){
-    document.querySelector(".ham-menu").style.transform = "translateX(-500px)" ;
-    document.querySelector("body").style.position="unset";
+var crd = document.getElementsByClassName("card");
+for(var i = 0; i < crd.length; i++){
+   
+    crd[i].onclick = function(){
+        var val = document.querySelector(".ham-menu").style.transform
+        if(val=="translateX(0px)"){
+            document.querySelector(".ham-menu").style.transform = "translateX(-500px)" ;
+            document.querySelector("body").style.position="unset";
+        }
+    }
 }
-})

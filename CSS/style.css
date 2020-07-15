@@ -606,7 +606,7 @@ body{
     }
     .ham-menu{
         display: inline-block;
-        width: 70%;
+        width: 80%;
     }
     .ham{
         background-image: url("Images/open-menu.svg");
